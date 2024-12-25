@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonar Classification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sonar Classification</h1>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="features">Enter 60 Features (comma-separated):</label>
+                <input type="text" id="features" placeholder="e.g., 0.02,0.03,...">
+            </div>
+            <button type="button" class="btn" onclick="makePrediction()">Predict</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
